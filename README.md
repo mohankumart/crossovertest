@@ -6,6 +6,9 @@
 3. node app.js (start the server)
 4. http://localhost:3000/ (launch the application in browser)
 
+<h2>Run Unit Tests<h2>
+1. 
+
 <h2>Features</h2>
 1. Written custom angular diretcive and implemented (expand/collapse accodian table)
 2. Written sass and used grunt-sass module to compile sass to css
@@ -17,6 +20,11 @@
 
 <h2>Frameworks</h2>
 1. AngularJS
+
+<h2>Testing</h2>
+1. Chrome - pass
+2. Firefox - pass
+3. Safari - pass
 
 <h2>Known Issues</h2>
 1. pie chart will not be displayed in >IE10 (used HTML5 canvas to render piechart)
