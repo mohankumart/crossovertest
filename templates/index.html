@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html ng-app="utApp">
+	<head>
+		<meta charset="UTF-8">
+		<title>Crossover - Test</title>
+		<link rel="stylesheet" type="text/css" href="static/css/base.min.css"/>
+	</head>
+	<body class="container" ng-controller="utAppCtlr">
+		<!-- UT Panels markup -->
+		<ut-panel-set ng-if="utPanels.length" config="config">
+			<ut-panel-heading></ut-panel-heading>
+			<ut-panel ng-repeat="panel in utPanels" data="panel" collapse="panel.collapse"></ut-panel>
+		</ut-panel-set>
+		
+		<!-- library files -->
+		<script src="node_modules/jquery/dist/jquery.min.js"></script>
+		<script src="node_modules/angular/angular.min.js"></script>
+		<script src="node_modules/angular-animate/angular-animate.min.js"></script>
+		<script src="node_modules/angular-resource/angular-resource.min.js"></script>
+		<script src="node_modules/angular-sanitize/angular-sanitize.min.js"></script>
+		
+		<!-- ut app files -->
+		<script src="static/js/app.min.js"></script>
+		
+		<!--  
+		<script src="static/js/controllers.js"></script>
+		<script src="static/js/directives.js"></script>
+		<script src="static/js/filters.js"></script>
+		<script src="static/js/templates.js"></script>
+		<script src="static/js/services.js"></script>
+		<script src="static/js/pieChart.js"></script>
+		<script src="static/js/utconfig.js"></script>
+		<script src="static/js/utmodel.js"></script>
+		-->
+		
+		<!-- UT modal popup(TBD) -->
+		<div id="utModal" class="modal">
+			<div class="modal-content">
+				<div class="modal-header">
+					<span ng-click="modalClose()" class="close">&times;</span>
+				      <h2>{{modalTitle}}</h2>
+				 </div>
+				 <div class="modal-body">
+				      <p>{{modalBody}}</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+
+
+
