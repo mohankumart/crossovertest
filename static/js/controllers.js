@@ -13,31 +13,21 @@ utApp.controller("utAppCtlr",['$scope','getUtPanelDetails','$window', function($
 		console.log('unable to ut panel details');
 	});
 	$scope.config = utConfig.utPanleConfig;
+	$scope.showModal = false;
 	
 	$scope.triggerModal = function(title, body){
 		$scope.modal = $('#utModal');
 		$scope.modal.show();
+		$scope.showModal = true;
 		$scope.modalTitle = title;
 		$scope.modalBody = body;
 	}
 	
 	$scope.modalClose = function(){
 		$scope.modal.hide();
+		$scope.showModal = false;
 	}
 }]);
 
-utApp.controller('PasswordController', function PasswordController($scope) {
-  $scope.password = '';
-  $scope.grade = function() {
-    var size = $scope.password.length;
-    if (size > 8) {
-      $scope.strength = 'strong';
-    } else if (size > 3) {
-      $scope.strength = 'medium';
-    } else {
-      $scope.strength = 'weak';
-    }
-  };
-});
 
 

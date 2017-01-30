@@ -3,14 +3,6 @@
  */
 var directives = angular.module('utApp.directives', []);
 
-directives.directive('aGreatEye', function () {
-    return {
-        restrict: 'E',
-        replace: true,
-        template: '<h1>lidless, wreathed in flame, {{1 + 1}} times</h1>'
-    };
-});
-
 directives.directive('canvasPie',function(){
 	return {
 		restrict: 'EA',
