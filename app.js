@@ -8,6 +8,7 @@ var app = express();
 
 app.use('/static', express.static(path.join(__dirname, 'static')));
 app.use('/node_modules', express.static(path.join(__dirname, 'node_modules')));
+app.use('/test', express.static(path.join(__dirname, 'test')));
 
 app.get('/', function(req, res){
 	res.sendFile(path.join(__dirname + '/templates/index.html'))
