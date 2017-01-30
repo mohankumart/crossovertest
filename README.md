@@ -11,7 +11,7 @@
 1. npm install -g karma-cli (install karma cli)
 2. karma start (start the karma server)
 3. karma launches chrome 
-4. click on debug button in chrome.
+4. click on debug button in chrome
 5. View the unit test results
 
 <h2>Features</h2>
@@ -26,7 +26,7 @@
 
 <h2>Frameworks</h2>
 1. AngularJS
-2. Express 
+2. Express
 
 <h2>Testing</h2>
 1. Chrome - pass
@@ -40,3 +40,5 @@
 1. Write polyfill for piechart in >IE10
 2. Create image sprites
 3. Write more unit test cases to cover edge cases
+4. canvas code need to be more generic
+5. Modal dialog overlay code need to be more generic
