@@ -7,7 +7,11 @@
 4. http://localhost:3000/ (launch the application in browser)
 
 <h2>Run Unit Tests<h2>
-1. 
+1. npm install -g karma-cli (install karma cli)
+2. karma start (start the karma server)
+3. karma launches chrome 
+4. click on debug button in chrome.
+5. View the unit test results
 
 <h2>Features</h2>
 1. Written custom angular diretcive and implemented (expand/collapse accodian table)
