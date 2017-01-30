@@ -1,8 +1,9 @@
 # crossovertest
 
 <h2>Setup</h2>
+1. Install node@6.9.4 and npm@3.10.10 (please follow install instructions: https://nodejs.org/en/download/)
 1. Extract the project crossovertest
-2. npm install (Run this command at the level of package.json file)
+2. npm install (Optional:Included node_modules in the zip folder and therefore this step is optional.Run this command at the level of package.json file)
 3. node app.js (start the server)
 4. http://localhost:3000/ (launch the application in browser)
 
@@ -21,9 +22,11 @@
 5. Used grunt as task runner
 6. Used karma as test runner
 7. written units using jasmine
+8. Used Node Express server to run application
 
 <h2>Frameworks</h2>
 1. AngularJS
+2. Express 
 
 <h2>Testing</h2>
 1. Chrome - pass
